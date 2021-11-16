@@ -28,3 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: ./gradlew build
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v1
+        with:
+          name: test-report
+          path: build/reports/tests/test
