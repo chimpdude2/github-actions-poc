@@ -3,7 +3,7 @@ import kotlin.test.assertEquals
 
 class CatTest {
 
-    @Test fun catGoesMeow() {
+    @Test fun `Cat goes Meow`() {
         val cat = Cat()
         assertEquals(cat.meow(), "Meow")
     }
